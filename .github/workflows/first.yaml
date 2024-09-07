@@ -20,6 +20,6 @@ jobs:
       - name: Run build
         run: npm run build
 
-      - name: Deploy code
+      - name: Deploy code 
         run: echo "Deploying......."
 

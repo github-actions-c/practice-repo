@@ -1,0 +1,9 @@
+name: First-Workflow
+on: [push]
+
+jobs:
+  run lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run lint a
+        run: eslint --ext .jsx --fix src

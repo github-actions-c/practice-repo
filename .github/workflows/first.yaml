@@ -2,8 +2,15 @@ name: First-Workflow
 on: [push]
 
 jobs:
-  run-lint:
+  run-jobs:
     runs-on: ubuntu-latest
     steps:
-      - name: run lint a
-        run: eslint --ext .jsx --fix src
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Run Lint
+        run: npm lint
+

@@ -23,7 +23,20 @@ jobs:
       - name: Deploy code 
         run: echo "Deploying.....   .."
 
+  javascript-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Actions Code
+        uses: actions/checkout@v4
+        with:
+          repository: '91palash91/javascript-hello-action'
 
+      - name: Test Local Action
+        id: test-action
+        uses: ./.github/actions/javascript-hello-action
+        with:
+          milliseconds: 1000
+    
 
 
 

@@ -30,6 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: '91palash91/javascript-hello-action'
+          path: ./.github/actions/javascript-hello-action
 
       - name: Test Local Action
         id: test-action

@@ -36,7 +36,7 @@ jobs:
         id: test-action
         uses: ./.github/actions/javascript-hello-action
         with:
-          milliseconds: 100000
+          milliseconds: 10000
     
 
 

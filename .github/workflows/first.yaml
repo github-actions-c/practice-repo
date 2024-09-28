@@ -23,6 +23,7 @@ jobs:
       - name: Deploy code 
         run: echo "Deploying.....   .."
 
-    javascript-action:
-      runs-on: ubuntu-latest
+
+
+
 
